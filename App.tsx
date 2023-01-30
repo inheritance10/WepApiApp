@@ -5,13 +5,11 @@ import axios from "axios";
 
 
 const App = () => {
-
-
   /*function fetchData(){
     const response = axios.get('https://jsonplaceholder.typicode.com/users')
     .then((response) => {
       console.log(response);
-    }) 
+    })
     .catch((error) => {
       console.log(error);
     });
@@ -21,7 +19,7 @@ const App = () => {
 
 
   async function fetchData(){
-    
+
     const response = await axios.get('https://jsonplaceholder.typicode.com/users');
 
     setLoading(false);
@@ -67,10 +65,10 @@ const App = () => {
         {
           loading ? <ActivityIndicator style={{margin: 50,justifyContent:'center'}} size="large"/>
           :
-          <FlatList 
+          <FlatList
           data={data}
            renderItem={renderItem}
-         
+
          />
         }
       </View>
